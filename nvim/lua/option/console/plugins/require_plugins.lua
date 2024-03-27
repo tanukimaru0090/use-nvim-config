@@ -157,8 +157,10 @@ function UsePlugins()
     "stevearc/conform.nvim",
     "mfussenegger/nvim-dap",
     "rcarriga/nvim-dap-ui",
+    "nvim-neotest/nvim-nio",
     "ray-x/lsp_signature.nvim",
     "jdonaldson/vaxe",
+    "EdJoJob/llvmir-vim",
   }
 end
 
