@@ -1,14 +1,19 @@
--- Use Require 
-require("option/console/plugins/require_plugins")
-require("option/console/init/keymap")
-require("option/console/init/opt")
-require("option/console/plugins/nvim-dap-conf")
-require("option/console/plugins/lsp_signature-conf")
-require("option/console/init/run")
-require("option/console/init/command")
-require("option/console/plugins/conform-conf")
-require("option/console/plugins/barbar-conf")
-require("option/console/plugins/nvim-web-devicons-conf")
+-- Console Require 
+require("console/init/keymap")
+require("console/init/opt")
+require("console/init/run")
+require("console/init/command")
+-- GUI Require 
+
+-- Share Require
+require("share/plugins/require_plugins")
+require("share/plugins/nvim-dap-conf")
+require("share/plugins/lsp_signature-conf")
+require("share/plugins/conform-conf")
+require("share/plugins/barbar-conf")
+require("share/plugins/nvim-web-devicons-conf")
+
+
 --[[
 
 =====================================================================
