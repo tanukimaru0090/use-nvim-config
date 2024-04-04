@@ -4,7 +4,7 @@ require("console/init/opt")
 require("console/init/run")
 require("console/init/command")
 -- GUI Require 
-
+require("gui/init/run")
 -- Share Require
 require("share/plugins/require_plugins")
 require("share/plugins/nvim-dap-conf")
@@ -125,6 +125,7 @@ require('lazy').setup({
 })
 -- UseRunConfig 
 UseRun()
+UseRunGUI()
 SetDefaultOptions()
 SetUseOptions()
 -- UsePluginsConfig
