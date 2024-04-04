@@ -62,11 +62,17 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 end 
 
-function SetKeyMap()
+function SetUseKeyMap()
 -- [[Use Keymaps]]
 
--- Ctrl-Sで保存する
+-- Ctrl-Sで保存する(Windows)
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', {noremap = true})
+-- Ctrl-S二回で保存する(Unix)
+vim.api.nvim_set_keymap('n', '<leader>s', ':w ++ff=unix<CR>', {noremap = true})
+
+
+
+
 --Escapeでターミナルを抜ける
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', {noremap = true})
 -- バイナリファイルを開く

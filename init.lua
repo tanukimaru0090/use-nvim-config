@@ -137,7 +137,7 @@ SetNvimWebDeviconsConfig()
 -- DefaultKeyMap
 SetDefaultKeyMap()
 -- UserKeyMap
-SetKeyMap()
+SetUseKeyMap()
 
 
 -- [[ Configure Treesitter ]]

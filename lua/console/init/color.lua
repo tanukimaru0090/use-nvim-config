@@ -1,3 +1,6 @@
+
+
+function SetUseColor()
 vim.o.background = "dark"
 vim.cmd("hi clear")
 
@@ -78,3 +81,4 @@ vim.api.nvim_set_hl(0, "DiffText", {ctermbg = 28})
 vim.api.nvim_set_hl(0, "Error", {ctermfg = 196, ctermbg = 17})
 end,
 })
+end
