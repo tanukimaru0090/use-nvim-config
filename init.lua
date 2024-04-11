@@ -24,12 +24,12 @@ require("share/plugins/conform-conf")
 require("share/plugins/barbar-conf")
 require("share/plugins/nvim-web-devicons-conf")
 require("share/plugins/notify-conf")
-
 require("share/plugins/nvim-lsp-conf")
 require("share/plugins/nvim-cmp-conf")
 require("share/plugins/nvim-treesitter-conf")
 require("share/plugins/neodev-conf")
 require("share/command")
+require("share/keymap")
 --[[
 
 =====================================================================
@@ -123,7 +123,7 @@ else
     UseRun()
     SetDefaultOptions()
     SetUseOptions()
-    
+    -- プラグインが有効な場合
     if has_noplugin ~=true then
 	-- DefaultPluginsConfig
 	SetNvimLspConfig()
@@ -141,7 +141,9 @@ else
     	SetDefaultKeyMap()
     	-- UserKeyMap
     	SetUseKeyMap()
-
+    -- プラグインが無効な場合
+    else
+	SetShareKeyMap()
     end
 
   
