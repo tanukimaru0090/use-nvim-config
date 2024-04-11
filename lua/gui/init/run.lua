@@ -1,3 +1,3 @@
 function UseRunGUI()
-	--vim.opt.guifont = "MS\\ ゴシック:h15"
+	vim.api.nvim_command("colorscheme default-colors-plus")
 end
