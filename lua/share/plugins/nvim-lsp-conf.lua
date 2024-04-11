@@ -1,0 +1,3 @@
+function SetNvimLspConfig()
+
+end
